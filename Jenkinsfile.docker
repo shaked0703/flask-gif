@@ -26,7 +26,7 @@ pipeline {
                 sh 'rm -rf *'
                 sh 'git clone https://github.com/shaked0703/flask-gif.git'
                 //Deletes Previous Docker Images
-                sh 'docker rmi -f  shaked0703/docflask2:latest'
+                sh 'docker rmi -f  shaked0703/flask-gif:latest'
             }
         }
         stage('Build And Push The Image To Docker Hub') {
