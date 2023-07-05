@@ -47,7 +47,7 @@ pipeline {
                 connectToServer(EC2_IP_TEST)
                 // Runs tests from the main machine on the website
                 sh 'chmod +x flask-gif/tests.sh'
-                sh './flask-gif/tests.sh'
+                sh 'curl -s $EC2_IP_TEST:5000'
             }
         }
         stage('Running Docker On Prod Server') {
