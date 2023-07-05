@@ -24,7 +24,7 @@ pipeline {
             steps {
                 // Clean Up Project Files And Clone Git - To Update The Project
                 sh 'rm -rf *'
-                sh 'git clone https://github.com/shaked0703/flask.git'
+                sh 'git clone https://github.com/shaked0703/flask-gif.git'
                 //Deletes Previous Docker Images
                 sh 'docker rmi -f  shaked0703/docflask2:latest'
             }
